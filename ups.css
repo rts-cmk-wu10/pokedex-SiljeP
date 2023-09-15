@@ -1,0 +1,49 @@
+.errorMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorImage {
+
+    height: 400px;
+
+}
+
+.errorTitle {
+    font-family: var(--body-font);
+    font-size: 3em;
+    font-style: italic;
+
+}
+
+.errorPoke {
+    font-family: var(--title-font);
+    font-size: 1.5em;
+    color: var(--main-color);
+    letter-spacing: .6rem;
+    font-style: normal;
+    text-shadow: 6px 7px var(--light-color);
+    padding-left: .6em;
+}
+
+.errorBack__container {
+
+    text-align: center;
+}
+
+.errorBack {
+    font-family: var(--title-font);
+    font-size: 3em;
+    padding: .5em;
+    border-radius: 20px;
+    background-color: var(--light-color);
+    color: var(--main-color);
+    border-color: var(--dark-color);
+    letter-spacing: .4rem;
+}
+
+.errorBack:hover {
+    text-shadow: 6px 7px var(--dark-color);
+    transition: text-shadow 300ms ease;
+}

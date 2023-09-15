@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silje's PokeDex</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/variables.css">
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="headerSection">
+            <img src="/images/JessieJames.webp" alt="" class="headerImage__left">
+            <div class="headerText__container">
+                <a href="/index.html">
+                    <h1 class="headerTitle">Silje's PokeDex</h1>
+                </a>
+                <p class="headerTagline">Gotta catch 'em all</p>
+            </div>
+            <img src="/images/ash.png" alt="" class="headerImage__right">
+
+        </section>
+    </header>
+    <main class="pokedexMain">
+
+        <div class="pokeListDetailContainer">
+            <article class="pokeList__article">
+                <h2 class="pokeList__title">Pokemons</h2>
+                <form class="searchForm">
+                    <label class="searchForm__label">
+                        search
+                        <input name="pokeSearch" list="pokemons" class="searchForm__input" type="search"
+                            placeholder="Try Charmander!">
+                        <datalist id="pokemons">
+                        </datalist>
+                    </label>
+                    <button class="searchForm__button" type="submit">Search</button>
+                    <section class="pokeList__section">
+                        <ul class="pokeList">
+                        </ul>
+                    </section>
+                </form>
+                <div class="pageLinksContainer">
+                    <a class="prevPage" href="">Back</a><a class="nextPage" href="">Next</a>
+                </div>
+            </article>
+
+            <article class="pokemonDetail">
+                <h1 class="pokemonName">Choose a pokemon in the left box &#11013</h1>
+            </article>
+        </div>
+    </main>
+    <footer class="pokeFooter">
+        <p class="errrorSite">Go to error message <a class="errorSite__link" href="/ups.html">here</a></p>
+        <p class="madeText">Made using https://pokeapi.co/ as API practice</p>
+    </footer>
+
+    <script src="/app.js" defer></script>
+</body>
+
+</html>
